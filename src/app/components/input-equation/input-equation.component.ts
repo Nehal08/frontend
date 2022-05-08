@@ -75,4 +75,10 @@ export class InputEquationComponent implements OnInit {
     }
   }
 
+  clear(){
+    this.solution = null;
+    this.equation1 = '';
+    this.equation2 = '';
+  }
+
 }

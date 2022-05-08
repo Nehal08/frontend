@@ -8,7 +8,8 @@
                 <input class="search-field" [(ngModel)]="equation1">
             </div>
             <div class="row" style="margin-left:250px;margin-top: 50px;">
-                <button class="btn btn-secondary"  style="width:100px" (click)="Solve()">Submit</button>
+                <button class="btn btn-secondary"  style="width:100px;margin-right: 20px;" (click)="Solve()">Submit</button>
+                <button class="btn" style="width:100px" (click)="clear()">Clear</button>
             </div>
         </div>
         <div class="col-md-7" *ngIf="id == 1">
@@ -25,10 +26,11 @@
                 <input class="search-field" [(ngModel)]="equation2">
             </div>
             <div class="row" style="margin-left:250px;margin-top: 50px;">
-                <button class="btn btn-secondary"  style="width:100px" (click)="Solve()">Submit</button>
+                <button class="btn btn-secondary"  style="width:100px;margin-right: 20px;" (click)="Solve()">Submit</button>
+                <button class="btn" style="width:100px" (click)="clear()">Clear</button>
             </div>
         </div>
-        <div class="col-md-5" *ngIf="solution != null && id==0 || id==2" style="margin-top:100px;">
+        <div class="col-md-5" *ngIf="solution != null && (id==0 || id==2)" style="margin-top:100px;">
             <h2>The Solution of equation {{equation1}} is {{solution}}</h2>
         </div>
         <div class="col-md-5" *ngIf="solution != null && id==1" style="margin-top:100px;">
