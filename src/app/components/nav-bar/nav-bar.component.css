@@ -1,0 +1,28 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+    background-color: #313131;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+}
+
+a span{
+    font-family: 'Square Peg', cursive;
+    font-size: 48px;
+    margin-left: 5px;
+    color:#AAA;
+}
+
+a:hover span{
+    color: whitesmoke;
+}
+
+.spacer {
+    flex: 1;
+}

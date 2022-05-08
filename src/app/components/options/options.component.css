@@ -1,0 +1,30 @@
+.card {
+    background-color: #f3f3f3;
+
+    display: block;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 0px;
+    border-radius: 8px;
+    min-height: 200px;
+
+    color: #313131;
+    font-size: 19px;
+	/* width: 100%; */
+    max-width: 250px;
+	margin-right: 45px;
+    border: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    padding: 16px;
+    color: #313131;
+    margin-top: 50px;
+    transition: .4s;
+}
+
+.card:hover{
+    /* color: #24C444; */
+    transform: scale(1.05);
+}

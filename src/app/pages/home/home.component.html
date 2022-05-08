@@ -1,0 +1,7 @@
+<div class="home">
+    <h1>What kind of equation do you want to solve?</h1>
+    <br><br><br>
+    <div class="options">
+        <app-options *ngFor="let option of options" [text]="option.text" [id]="option.id"></app-options>
+    </div>
+</div>

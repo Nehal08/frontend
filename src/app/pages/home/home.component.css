@@ -1,0 +1,22 @@
+.home{
+    margin: 20px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.home h1{
+    color: #888;
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;    
+    margin-bottom: 30px;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 8px;
+    justify-content: center;
+    cursor:pointer;
+}
