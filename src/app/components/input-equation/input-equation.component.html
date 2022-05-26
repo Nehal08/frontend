@@ -30,11 +30,14 @@
                 <button class="btn" style="width:100px" (click)="clear()">Clear</button>
             </div>
         </div>
-        <div class="col-md-5" *ngIf="solution != null && (id==0 || id==2)" style="margin-top:100px;">
+        <div class="col-md-5" *ngIf="solution != null && (id==0 || id==2) && solution != 'Something Went Wrong'" style="margin-top:100px;">
             <h2>The Solution of equation {{equation1}} is {{solution}}</h2>
         </div>
-        <div class="col-md-5" *ngIf="solution != null && id==1" style="margin-top:100px;">
-            <h2>The Solution of equation {{equation1}} and {{equation2}} is x = {{solution['x']}} and y = {{solution['y']}}</h2>
+        <div class="col-md-5" *ngIf="solution != null && id==1 && solution != 'Something Went Wrong'" style="margin-top:100px;">
+            <h2>The Solution of equations {{equation1}} and {{equation2}} is <br> x = {{solution['x']}} <br> y = {{solution['y']}}</h2>
+        </div>
+        <div class="col-md-5" *ngIf="solution != null && solution == 'Something Went Wrong'" style="margin-top:100px;">
+            <h2>Sorry, we couldn't solve this</h2>
         </div>
     </div>
    
