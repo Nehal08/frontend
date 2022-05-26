@@ -11,7 +11,6 @@ export class RestService {
   constructor(private http: HttpClient) { }
 
   getSolution(eq: any){
-    console.log(eq)
     return this.http.post(this.url,eq)
   }
 
